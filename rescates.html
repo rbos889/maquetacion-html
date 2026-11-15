@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listado de rescates de animales registrados en el sistema, con su estado y ubicación.">
+  <title>Rescates registrados - Sistema de Rescate y Adopción Animal</title>
+</head>
+<body>
+
+  <a href="#contenido-principal">Saltar al contenido principal</a>
+
+  <header>
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar un animal</a></li>
+        <li><a href="rescates.html" aria-current="page">Rescates registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <section aria-labelledby="titulo-tabla">
+      <h2 id="titulo-tabla">Rescates registrados</h2>
+      <p>Listado de los casos atendidos y su estado actual.</p>
+
+      <table>
+        <caption>Registro de rescates de animales</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Especie</th>
+            <th scope="col">Estado al rescatar</th>
+            <th scope="col">Ubicación</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Rescatista</th>
+            <th scope="col">Estado del caso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">R-001</th>
+            <td>Perro</td>
+            <td>Herido</td>
+            <td>Av. Maldonado, Quito</td>
+            <td><time datetime="2026-11-02">02/11/2026</time></td>
+            <td>Carlos Mena</td>
+            <td>En recuperación</td>
+          </tr>
+          <tr>
+            <th scope="row">R-002</th>
+            <td>Gato</td>
+            <td>Abandonado</td>
+            <td>Chilibulo, Quito</td>
+            <td><time datetime="2026-11-05">05/11/2026</time></td>
+            <td>Ana Lara</td>
+            <td>Disponible para adopción</td>
+          </tr>
+          <tr>
+            <th scope="row">R-003</th>
+            <td>Perro</td>
+            <td>Maltrato</td>
+            <td>Sector La Magdalena, Quito</td>
+            <td><time datetime="2026-11-08">08/11/2026</time></td>
+            <td>Carlos Mena</td>
+            <td>En evaluación veterinaria</td>
+          </tr>
+          <tr>
+            <th scope="row">R-004</th>
+            <td>Ave</td>
+            <td>Herido</td>
+            <td>Parque La Carolina, Quito</td>
+            <td><time datetime="2026-11-10">10/11/2026</time></td>
+            <td>Lucía Vera</td>
+            <td>Adoptado</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="6">Total de rescates registrados</th>
+            <td>4</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section aria-labelledby="titulo-estados">
+      <h2 id="titulo-estados">Estados posibles de un caso</h2>
+      <ul>
+        <li>Reportado</li>
+        <li>En evaluación veterinaria</li>
+        <li>En recuperación</li>
+        <li>Disponible para adopción</li>
+        <li>Adoptado</li>
+      </ul>
+    </section>
+
+    <aside>
+      <h2>¿Viste un animal en riesgo?</h2>
+      <p><a href="reportar.html">Completa el formulario de reporte</a>.</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema de Control de Rescate y Adopción Animal. Proyecto académico - UTM.</p>
+    <p><a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+</body>
+</html>
